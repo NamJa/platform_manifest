@@ -11,6 +11,9 @@
   <default revision="refs/tags/android-4.4.4_r1"
            remote="aosp"
            sync-j="4" />
+           
+  <remote name="tm"
+           fetch="https://github.com/TheMuppets/" />
 
   <project path="build" name="SlimRoms/android_build" remote="github" revision="kk4.4" >
     <copyfile src="core/root.mk" dest="Makefile" />
@@ -435,6 +438,19 @@
   <project path="tools/motodev" name="platform/tools/motodev" groups="notdefault,motodev" />
   <project path="tools/studio/cloud" name="platform/tools/studio/cloud" groups="notdefault,tools" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
+  <project path="vendor/akm" name="proprietary_vendor_akm" remote="tm" revision="cm-11.0" />
+  <project path="vendor/audience" name="proprietary_vendor_audience" remote="tm" revision="cm-11.0" />
+  <project path="vendor/asus" name="proprietary_vendor_asus" remote="tm" revision="cm-11.0" />
+  <project path="vendor/bn" name="proprietary_vendor_bn" remote="tm" revision="cm-10.2" />
+  <project path="vendor/broadcom" name="proprietary_vendor_broadcom" remote="tm" revision="cm-11.0" />
+  <project path="vendor/elan" name="proprietary_vendor_elan" remote="tm" revision="cm-11.0" />
+  <project path="vendor/imgtec" name="proprietary_vendor_imgtec" remote="tm" revision="cm-11.0" />
+  <project path="vendor/invensense" name="proprietary_vendor_invensense" remote="tm" revision="cm-11.0" />
+  <project path="vendor/lge" name="proprietary_vendor_lge" remote="tm" revision="cm-11.0" />
+  <project path="vendor/nvidia" name="proprietary_vendor_nvidia" remote="tm" revision="cm-11.0" />
+  <project path="vendor/nxp" name="proprietary_vendor_nxp" remote="tm" revision="cm-11.0" />
+  <project path="vendor/samsung" name="proprietary_vendor_samsung" remote="tm" revision="cm-11.0" />
+  <project path="vendor/widevine" name="proprietary_vendor_widevine" remote="tm" revision="cm-11.0" />
 
   <project path="platform_manifest" name="SlimRoms/platform_manifest" remote="github" revision="kk4.4" />
 
